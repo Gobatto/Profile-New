@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+
+body{
+  background: #777777;
+  color: #026570;
+  margin: 0;
+  padding: 0;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+::selection {
+  color: #23CE6B;
+  background: grey;
+}
+
+section {
+  height: 100vh;
+}
+
+.intro-text{
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+
+.intro-text h3{
+  color: lightgray;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+
+#typed{
+  font-size: 4em;
+}
+
+.typed-cursor {
+  display: none;
+}
+
+.hidden{
+  opacity: 0;
+}
+
+#about{
+  background-color: black;
+  display: flex;
+}
+
+.section-title{
+  font-size: 3em;
+  width: max-content;
+}
+
+.title-green{
+  color:  #23CE6B;
+  border-bottom: 5px solid #23CE6B;
+}
+
+.title-white{
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+#about-text{
+  padding: 50px;
+  width: 50%;
+  position: relative;
+}
+
+#flip-rapha{
+  /* -webkit-filter: grayscale(100%); Safari 6.0 - 9.0 */
+  /* filter: grayscale(100%); */
+  object-fit: cover;
+  height: 75vh;
+  margin: auto;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+/* Career */
+
+.career-content{
+  padding: 40px 70px;
+}
+
+.company{
+  display: flex;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.company img{
+  margin-right: 50px;
+  border-radius: 5px;
+  height: 10%;
+  width: 100px;
+}
+
+/* Contact */
+
+#contact{
+  display: flex;
+  background-color: black;
+  position: relative;
+
+}
+
+.contact-info{
+  padding: 50px;
+  width: 60%;
+  z-index: 2;
+}
+
+.contact-info p {
+  line-height: 30px;
+}
+
+.contact-links{
+  display: flex;
+}
+
+.display-mobile{
+  display: none;
+}
+
+
+/* Mobile */
+
+@media(max-width: 800px){
+
+  #game, #pong-game, .hide-mobile{
+    display: none;
+  }
+
+  .display-mobile{
+    display: block;
+  }
+
+  .quote{
+    font-size: 1em;
+    padding-right: 20px;
+  }
+
+  .career-content{
+    padding: 40px;
+  }
+
+  img{
+    display: none;
+  }
+
+  #about-text{
+    width: 100%;
+  }
+
+  #about{
+    height: auto;
+  }
+
+  #typed {
+    font-size: 3em;
+  }
+
+  .background{
+    height: auto !important;
+  }
+}
+
+
+a{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 15px 30px;
+  color: #23CE6B;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+@media(max-width: 680px){
+  #typed{
+   font-size: 2.5em;
+  }
+}
+
+/* Contact Button Animation */
+@media(min-width: 800px){
+  a:hover{
+    color: white;
+    background: #23CE6B;
+    box-shadow: 0 0 10px #23CE6B, 0 0 40px #23CE6B, 0 0 80px #23CE6B;
+    transition-delay: 1s;
+  }
+  a span{
+    position: absolute;
+    display: block;
+  }
+  a span:nth-child(1)  {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#23CE6B);
+  }
+  a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+  }
+  a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#23CE6B);
+  }
+  a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+  }
+  a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#23CE6B);
+  }
+  a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+  a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#23CE6B);
+  }
+  a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+  }
+}
+
+@media(max-width: 680px){
+   #typed{
+    font-size: 2.5em;
+   }
+}
