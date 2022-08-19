@@ -15,7 +15,7 @@ const typed = new Typed('#typed', {
   window.onload = function() {
     Particles.init({
       selector: '.background',
-      color: "#026570",
+      color: "#000000",
       connectParticles: true,
       maxParticles: 100,
       responsive: [
