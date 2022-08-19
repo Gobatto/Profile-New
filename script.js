@@ -17,12 +17,12 @@ const typed = new Typed('#typed', {
       selector: '.background',
       color: "#000000",
       connectParticles: true,
-      maxParticles: 100,
+      maxParticles: 200,
       responsive: [
         {
-          breakpoint: 768,
+          breakpoint: 900,
           options: {
-            maxParticles: 20,
+            maxParticles: 40,
           }
         }
       ]
@@ -30,5 +30,3 @@ const typed = new Typed('#typed', {
   };
   
   AOS.init();
-  
- 
