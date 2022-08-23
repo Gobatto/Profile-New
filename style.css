@@ -187,7 +187,7 @@ a{
 /* Contact Button Animation */
 @media(min-width: 800px){
   a:hover{
-    color: white;
+    color: #000;
     background: #1E5B3C;
     box-shadow: 0 0 10px #1E5B3C, 0 0 40px #1E5B3C, 0 0 80px #1E5B3C;
     transition-delay: 1s;
