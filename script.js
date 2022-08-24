@@ -15,7 +15,7 @@ const typed = new Typed('#typed', {
   window.onload = function() {
     Particles.init({
       selector: '.background',
-      color: "#000000",
+      color: "#FF6600",
       connectParticles: true,
       maxParticles: 200,
       responsive: [
@@ -30,3 +30,5 @@ const typed = new Typed('#typed', {
   };
   
   AOS.init();
+
+ 

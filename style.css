@@ -24,7 +24,7 @@ section {
 }
 
 .intro-text h3{
-  color: #000;
+  color: #FF6600;
   transition: visibility 0s, opacity 0.3s linear;
 }
 
@@ -249,4 +249,5 @@ a{
    #typed{
     font-size: 2.5em;
    }
+   
 }
