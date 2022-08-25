@@ -249,5 +249,12 @@ a{
    #typed{
     font-size: 2.5em;
    }
-   
+}
+canvas{
+  position:absolute;
+  top:0px; left:0px;
+}
+
+#particles-js{
+  background-size: cover;
 }
